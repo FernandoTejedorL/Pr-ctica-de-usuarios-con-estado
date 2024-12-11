@@ -1,7 +1,8 @@
-import { StyledUsersContainer } from './users.styles';
+import { USERS } from '../../constants/users-info';
+import User from '../user/User';
 
-const Users = ({ children }) => {
-	return <StyledUsersContainer>{children}</StyledUsersContainer>;
+const Users = () => {
+	return USERS.map(user => <User key={user.id} {...user} />);
 };
 
 export default Users;
