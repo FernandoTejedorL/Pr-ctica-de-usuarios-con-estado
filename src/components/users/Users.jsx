@@ -1,5 +1,7 @@
+import { StyledUsersContainer } from './users.styles';
+
 const Users = ({ children }) => {
-	return <div>{children}</div>;
+	return <StyledUsersContainer>{children}</StyledUsersContainer>;
 };
 
 export default Users;

@@ -1,14 +1,18 @@
+import { StyledForm } from './form.styles';
+
 const Inputs = () => {
 	return (
-		<div>
+		<StyledForm>
 			<input type='text' />
-			<label htmlFor='check'>Sólo activos</label>
-			<input type='checkbox' name='' id='check' />
+			<div>
+				<label htmlFor='check'>Sólo activos </label>
+				<input type='checkbox' name='' id='check' />
+			</div>
 			<select name='' id=''>
 				<option value='default'>Por defecto</option>
 				<option value='name'>Por nombre</option>
 			</select>
-		</div>
+		</StyledForm>
 	);
 };
 

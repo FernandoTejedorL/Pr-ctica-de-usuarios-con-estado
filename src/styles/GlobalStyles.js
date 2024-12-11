@@ -30,6 +30,11 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: ${FONT_WEIGHT.regular};
         background-color: ${COLORS.white};
         font-family: sans-serif;
+        padding: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        margin: 0;
     }
 
 `;
