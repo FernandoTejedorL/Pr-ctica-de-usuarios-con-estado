@@ -1,13 +1,18 @@
-import Button from './components/button/Button';
+import Inputs from './components/form/Form';
+import Header from './components/header/Header';
+import User from './components/user/User';
+import { USERS } from './constants/users-info';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
 	return (
 		<div>
 			<GlobalStyles />
-			<h1>Curso de React</h1>
-			<Button color='steelblue'>Click Me!</Button>
-			<Button color='#f0f'>Click Me!</Button>
+			<Header text='Listado de usuarios' />
+			<Inputs />
+			{USERS.map(user => (
+				<User key={user.id} {...user} />
+			))}
 		</div>
 	);
 };

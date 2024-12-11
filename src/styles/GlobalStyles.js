@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
     body{
         font-weight: ${FONT_WEIGHT.regular};
         background-color: ${COLORS.white};
+        font-family: sans-serif;
     }
 
 `;
