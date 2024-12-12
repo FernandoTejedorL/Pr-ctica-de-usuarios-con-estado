@@ -18,22 +18,20 @@ const App = () => {
 	);
 };
 
-const marked = setUsers => {
+export const action = setUsers => {
 	setUsers(USERS.filter(user => user.active));
 	console.log(USERS);
 };
 
-const defaultOrder = setUsers => {
+export const defaultOrder = setUsers => {
 	console.log(USERS);
 	setUsers(USERS);
 };
 
-const nameOrder = setUsers => {
+export const nameOrder = setUsers => {
 	console.log(USERS);
 	setUsers(USERS.sort((userA, userB) => userA.name.localeCompare(userB.name)));
 	return USERS;
 };
-
-export { marked, defaultOrder, nameOrder };
 
 export default App;
